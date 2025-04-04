@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> 
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Header with ARIA heading role -->
+    <header>
+        <h1 role="heading">My Portfolio</h1>
+    </header>
+
+    <!-- Navigation bar with ARIA navigation role -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image with ARIA img role -->
+    <section id="about">
+        <img src="C:\Users\acer\AppData\Local\Temp\51db18cc-a9b1-46a6-97a9-1541219c151f_Untitled.zip.51f\jeff 1.png" alt="Profile picture of the portfolio owner" role="img">
+        <p>Welcome to my portfolio! I am a web developer passionate about creating accessible and user-friendly websites.</p>
+    </section>
+
+    <!-- List with ARIA list and listitem roles -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Accessible Web Design</li>
+            <li role="listitem">Project 2: E-commerce Website</li>
+            <li role="listitem">Project 3: Blogging Platform</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
 
 </body>
-
 </html>
+
+
